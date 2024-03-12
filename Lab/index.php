@@ -8,13 +8,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #222; /* змінили колір фону на темний */
+            color: #ddd; /* змінили колір тексту на світлий */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #111; /* змінили колір фону заголовка на темний */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -35,8 +35,22 @@
         section {
             padding: 20px;
         }
+        .car-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .car-info .car {
+            flex-basis: 45%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #888; /* змінили колір меж на темний */
+            border-radius: 5px;
+            background-color: #333; /* змінили колір фону блоку з інформацією про автомобілі */
+        }
         footer {
-            background-color: #333;
+            background-color: #111; /* змінили колір фону футера на темний */
             color: #fff;
             padding: 10px 20px;
             text-align: center;
@@ -45,10 +59,12 @@
             width: 100%;
         }
         @media only screen and (max-width: 600px) {
-            /* Розширення для пристроїв з максимальною шириною 600px (наприклад, телефонів) */
             nav ul li {
                 display: block;
                 margin: 10px 0;
+            }
+            .car-info .car {
+                flex-basis: 100%;
             }
             footer {
                 position: static;
@@ -76,21 +92,30 @@
 
 <section id="models">
     <h2>Моделі</h2>
-    <p>Від елегантного Audi A3 до потужного Audi Q7, у нас є автомобіль для кожного. Дізнайтеся більше про нашу повну лінійку моделей, включаючи характеристики, ціни та доступні конфігурації.</p>
+    <div class="car-info">
+        <div class="car">
+            <h3>Audi RS 5</h3>
+            <p>Спортивний купе з потужним двигуном і спортивною підвіскою. RS 5 відомий своєю високою швидкістю та динамікою.</p>
+            <img src="audi_rs5.jpg" alt="Audi RS 5">
+        </div>
+        <div class="car">
+            <h3>Audi RS 6</h3>
+            <p>Практичний седан з високою продуктивністю. RS 6 поєднує спортивні характеристики з комфортом і практичністю.</p>
+            <img src="audi_rs6.jpg" alt="Audi RS 6">
+        </div>
+        <div class="car">
+            <h3>Audi RS 7</h3>
+            <p>Люксовий седан з вражаючим дизайном і потужним двигуном. RS 7 відомий своїм розкішним інтер'єром та високою швидкістю.</p>
+            <img src="audi_rs7.jpg" alt="Audi RS 7">
+        </div>
+        <div class="car">
+            <h3>Audi RS 8</h3>
+            <p>Ексклюзивний спортивний купе з найновішою технологією і найкращими характеристиками. RS 8 - це елітна модель для тих, хто шукає найкраще.</p>
+            <img src="audi_rs8.jpg" alt="Audi RS 8">
+        </div>
+    </div>
 </section>
 
 <section id="technology">
     <h2>Технології</h2>
-    <p>В Audi ми завжди на передовій технологій. Від сучасних систем безпеки до передових розваг, наші автомобілі обладнані найновішими інноваціями, щоб зробити вашу поїздку безпечною та комфортною.</p>
-</section>
-
-<section id="contact">
-    <h2>Контакти</h2>
-    <p>Маєте запитання або бажаєте дізнатися більше про наші автомобілі? Зв'яжіться з нашим відділом обслуговування клієнтів.</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Офіційний сайт Audi. Усі права захищено.</p>
-</footer>
-</body>
-</html>
+    <p>В Audi ми завжди на передовій технологій. Від сучасних систем безпеки до передових р
